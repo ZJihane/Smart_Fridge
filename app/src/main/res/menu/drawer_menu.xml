@@ -1,0 +1,41 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_header"
+        android:title=""
+        app:actionLayout="@layout/menu_header"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_my_home"
+        android:title="@string/Home"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item
+        android:id="@+id/nav_my_containers"
+        android:title="@string/my_containers"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_containers" />
+
+    <item
+        android:id="@+id/nav_my_recipes"
+        android:title="@string/my_recipes"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_recipe" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_profile" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="@string/logout"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_logout" />
+
+</menu>

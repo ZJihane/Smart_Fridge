@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SmartFridge</string>
+    <string name="login" />
+    <string name="todo" />
+    <string name="settings">\n</string>
+    <string name="menu" />
+    <string name="navigation_drawer_open" />
+    <string name="menu_home">\n\n</string>
+    <string name="menu_settings">\n</string>
+    <string name="menu_logout">\n</string>
+
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="icon_description">\n</string>
+    <string name="my_containers">My Containers</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="Home">Home</string>
+
+
+</resources>

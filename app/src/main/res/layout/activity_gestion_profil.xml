@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gestionProfil">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/espace2"
+            android:layout_width="342dp"
+            android:layout_height="644dp"
+            android:layout_marginBottom="112dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="215dp"
+                android:layout_height="197dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/todo"
+                android:scaleType="fitXY"
+                android:src="@drawable/fridge_user" />
+
+            <TextView
+                android:id="@+id/Auth_title_2"
+                android:layout_width="316dp"
+                android:layout_height="84dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:gravity="center"
+                android:text="Fridge User"
+                android:textColor="#142793"
+                android:textSize="48sp" />
+
+
+            <TextView
+                android:id="@+id/login_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akaya_telivigala"
+                android:text="Last Name"
+                android:textColor="#3F51B5"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/login_prenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akaya_telivigala"
+                android:text="First Name"
+                android:textColor="#3F51B5"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/BttRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Update profile"
+                android:textColorLink="#3F51B5" />
+
+
+            <Button
+                android:id="@+id/button_calcul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="calculate Caloric Needs"
+                android:textColorLink="#3F51B5" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
